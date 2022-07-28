@@ -13,7 +13,7 @@ export default function Navbar() {
           <a href="#projects" className="">
             Projects
           </a>
-          <a href="#Github" className="mr-5 hover:text-white">
+          <a href="https://github.com/sterlingpeck" className="">
             Github
           </a>
         </nav>
