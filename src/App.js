@@ -9,9 +9,8 @@ export default function App() {
     <main>
       <Navbar />
       <About />
-      <Contact />
       <Projects />
-      {/* <Resume /> */}
+      <Contact />
     </main>
   );
 }
