@@ -9,7 +9,7 @@ import {
   DatabaseIcon, // SQL
 } from "@heroicons/react/solid";
 
-import SterlingImg from "../assets/screenshots/sterling.png";
+import profileImg from "../assets/screenshots/profile.png";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
           <button className="py-3 px-6 sm:w-[60%] my-4">Github Repo</button>
         </div>
         <div>
-          <img className="w-full" src={SterlingImg}></img>
+          <img className="w-full" src={profileImg}></img>
         </div>
         <div className="absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%] mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl">
           <p>Tools used</p>

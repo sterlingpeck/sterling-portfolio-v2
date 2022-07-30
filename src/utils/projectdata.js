@@ -1,28 +1,34 @@
 export const projects = [
   {
     title: "Run Buddy",
-    description: "Website for class project using HTML and CSS.",
-    image: "./assets/screenshots/Run_Buddy.png",
+    subtitle: "HTML and CSS",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "../assets/screenshots/project1.png",
     link: "https://lernantino.github.io/run-buddy/",
   },
   {
-    title: "Modern Rolodex",
+    title: "Password Generator",
+    subtitle: "Javascript, HTML and CSS",
     description:
-      "Create and store contact cards for friends, family and professional contacts. In this project I used Javascript & Handlebars.",
-    image: "./assets/screenshots/Modern_Rolodex.png",
-    link: "https://modernrolodex2.herokuapp.com/",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "../assets/screenshots/project2.png",
+    link: "https://sterlingpeck.github.io/pass_gen/",
   },
   {
     title: "Weather Dashboard",
+    subtitle: "Javascript, HTML, CSS, APIs",
     description:
-      "Create and store contact cards for friends, family and professional contacts",
-    image: "./assets/screenshots/Weather_Dashboard.png",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "../assets/screenshots/project3.png",
     link: "https://sterlingpeck.github.io/weather_dashboard/",
   },
   {
-    title: "Password Generator",
-    description: "Generate a password based on specified criteria",
-    image: "./assets/screenshots/password_generator.png",
-    link: "https://sterlingpeck.github.io/pass_gen/",
+    title: "Modern Rolodex",
+    subtitle: "Javascript, HTML, BOOTSTRAP, HANDLEBARS, NODE, SQL",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "../assets/screenshots/project4.png",
+    link: "https://modernrolodex2.herokuapp.com/",
   },
 ];

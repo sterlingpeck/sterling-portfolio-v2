@@ -1,53 +1,62 @@
 import React from "react";
+import { projects } from "../utils/projectdata";
 
 import {
-  // CodeIcon, // Javascript
-  ColorSwatchIcon, // CSS
-  CubeIcon, // HTML
-  // ServerIcon, // Server
-  // PaperAirplaneIcon, // APIs
+  CodeIcon, // Javascript
+  //   ColorSwatchIcon, // CSS
+  //   CubeIcon, // HTML
+  //   ServerIcon, // Server
+  //   PaperAirplaneIcon, // APIs
 } from "@heroicons/react/solid";
 
-import project1Img from "../assets/screenshots/Run_Buddy.png";
+// import project1Img from "../assets/screenshots/project1.png";
 // import project2Img from "../assets/screenshots/.png";
 // import project3Img from "../assets/screenshots/.png";
 // import project4Img from "../assets/screenshots/.png";
 
-const Projects = () => {
+export default function Projects() {
   return (
-    <section>
-      <div className="w-full h-screen bg-zinc-200 flex flex-col justify-between">
-        <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
-          <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
-            <p className="text-2xl">HTML and CSS</p>
-            <h1 className="py-3 text-5-xl md:text-7xl font-bold">Run Buddy</h1>
-            <p className="text-2xl">
-              A modern looking website I built as a project for class.
-            </p>
-            <button className="py-3 px-6 sm:w-[60%] my-4">
-              Code Repository
-            </button>
-          </div>
-          <div>
-            <img className="w-full" src={project1Img}></img>
-          </div>
-          <div className="absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%] mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl">
-            <p>Tools used</p>
-            <div className="flex justify-between flex-wrap px-4">
-              <p className="flex px-4 py-2 text-slate-500">
-                <CubeIcon className="h-6 text-indigo-600" />
-                HTML
-              </p>
-              <p className="flex px-4 py-2 text-slate-500">
-                <ColorSwatchIcon className="h-6 text-indigo-600" />
-                CSS
-              </p>
-            </div>
-          </div>
+    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full mb-20">
+          <CodeIcon className="mx-auto inline-block w-10 mb-4" />
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+            Some Websites and Apps I've worked on
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
+            fuga dolore.
+          </p>
+        </div>
+
+        <div className="">
+          {projects.map((project) => (
+            <a
+              href={project.link}
+              key={project.image}
+              className="sm:w-1/2 w-100 p-4"
+            >
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={project.image}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                    {project.subtitle}
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+                  </h1>
+                  <p className="leading-relaxed">{project.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Projects;
+}
