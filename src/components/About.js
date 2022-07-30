@@ -22,13 +22,17 @@ const About = () => {
             My name is Sterling Peck and currently I work as a Senior Systems
             Administrator and am an aspiring Full Stack Developer!
           </p>
-          <button className="py-3 px-6 sm:w-[60%] my-4">Github Repo</button>
+          <a href="https://github.com/sterlingpeck">
+            <button className="sm:my-4 px-8 py-3 mb-4 rounded-xl">
+              Github
+            </button>
+          </a>
         </div>
         <div>
-          <img className="w-full" src={profileImg}></img>
+          <img className="w-full sm:my-4 px-8 py-3 mb-4" src={profileImg}></img>
         </div>
         <div className="absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%] mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl">
-          <p>Tools used</p>
+          <p>Tools I use</p>
           <div className="flex justify-between flex-wrap px-4">
             <p className="flex px-4 py-2 text-slate-500">
               <CubeIcon className="h-6 text-indigo-600" />

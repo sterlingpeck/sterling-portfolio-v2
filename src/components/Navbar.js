@@ -28,8 +28,8 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  data-testid="projects"
                   href="../../assets/Sterling Peck_Resume_2022.pdf"
+                  download="Sterling_Peck_Resume"
                 >
                   {" "}
                   Resume
@@ -52,11 +52,6 @@ const Navbar = () => {
           <li className="border-b-2 border-zinc-300 w-full">Projects</li>
           <li className="border-b-2 border-zinc-300 w-full">Resume</li>
           <div className="flex flex-col">
-            <a href="https://github.com/sterlingpeck">
-              <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">
-                Github
-              </button>
-            </a>
             <a href="#Contact">
               <button className="px-8 py-3">Contact Me</button>
             </a>
