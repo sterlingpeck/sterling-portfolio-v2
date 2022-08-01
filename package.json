@@ -2,6 +2,7 @@
   "name": "sterling-portfolio-2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sterlingpeck.github.io/sterling-portfolio-v2/",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.4",
