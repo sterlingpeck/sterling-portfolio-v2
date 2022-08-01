@@ -9,11 +9,6 @@ import {
   //   PaperAirplaneIcon, // APIs
 } from "@heroicons/react/solid";
 
-// import project1Img from "../assets/screenshots/project1.png";
-// import project2Img from "../assets/screenshots/.png";
-// import project3Img from "../assets/screenshots/.png";
-// import project4Img from "../assets/screenshots/.png";
-
 export default function Projects() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">

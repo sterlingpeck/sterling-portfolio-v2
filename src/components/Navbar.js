@@ -38,7 +38,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden md:flex pr-4">
-            <a href="#contact">
+            <a data-testid="contact" href="#contact">
               <button className="px-8 py-3">Contact Me</button>
             </a>
           </div>
@@ -52,8 +52,10 @@ const Navbar = () => {
           <li className="border-b-2 border-zinc-300 w-full">Projects</li>
           <li className="border-b-2 border-zinc-300 w-full">Resume</li>
           <div className="flex flex-col">
-            <a href="#Contact">
-              <button className="px-8 py-3">Contact Me</button>
+            <a href="#contact">
+              <button data-testid="contact" className="px-8 py-3">
+                Contact Me
+              </button>
             </a>
           </div>
         </ul>
