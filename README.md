@@ -21,6 +21,10 @@ Personal Portfolio
 
 These dependencies need to be installed to run this application: None
 
+# Screenshot
+
+![Screenshot](./build/assets/screenshots/readmeimg.png)
+
 # Usage
 
 In order to use this app, N/A
